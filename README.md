@@ -156,7 +156,7 @@ print(variabilidade)
 
 <h2 align="center">Q7 - O coeficiente (SIURB)</h2>
 
-Pelo que entendi do vídeo, esse coeficiente é um jeito de ajustar os valores do orçamento com base em obras passadas. Ele compara o custo que foi planejado com o custo real, pra tentar deixar as previsões mais certeiras.
+Pelo que entendemos do vídeo, esse coeficiente é um jeito de ajustar os valores do orçamento com base em obras passadas. Ele compara o custo que foi planejado com o custo real, pra tentar deixar as previsões mais certeiras.
 
 Ele ajuda a evitar que a gente subestime ou superestime os gastos. Isso é útil porque, na prática, os custos podem mudar bastante por vários motivos, e esse coeficiente serve como um ajuste baseado no que já aconteceu antes.
 
