@@ -67,8 +67,6 @@ No fim, a ideia é que os orçamentos fiquem mais realistas e tenham menos erro 
 
 | Dev | Avatar | RM |
 | ------------- | ------ | ----- |
-| ![](https://img.shields.io/badge/DEV-João-47797a?style=for-the-badge&logo=github) | <a href="https://github.com/jota0802"><img src="https://avatars.githubusercontent.com/u/161319025?v=4" height="50" style="border-radius:30px;"></a> | RM556790 |
 | ![](https://img.shields.io/badge/DEV-Yuri-70b2b4?style=for-the-badge&logo=github) | <a href="https://github.com/yurisilpess"><img src="https://avatars.githubusercontent.com/u/99032447?v=4" height="50" style="border-radius:30px;"></a> | RM557475 |
 | ![](https://img.shields.io/badge/DEV-Igor-7ca787?style=for-the-badge&logo=github) | <a href="https://github.com/igor-soos"><img src="https://avatars.githubusercontent.com/u/164360059?v=4" height="50" style="border-radius:30px;"></a> | RM556010 |
-| ![](https://img.shields.io/badge/DEV-Pietro-537064?style=for-the-badge&logo=github) | <a href="https://github.com/Pic0777"><img src="https://avatars.githubusercontent.com/u/162361580?v=4" height="50" style="border-radius:30px;"></a> | RM557283 |
 | ![](https://img.shields.io/badge/DEV-Gustavo-516b58?style=for-the-badge&logo=github) | <a href="https://github.com/gus7a2005"><img src="https://avatars.githubusercontent.com/u/161319479?v=4" height="50" style="border-radius:30px;"></a> | RM556289 |
