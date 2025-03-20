@@ -38,7 +38,7 @@ print(df.dtypes)
     - Cruzar dados meteorológicos ou de logística pode revelar correlações inesperadas.
 
 - Qual é o impacto da experiência da equipe na produtividade?
-Equipes mais experientes realmente entregam mais? Ou treinamento pode compensar experiência?
+    - Equipes mais experientes realmente entregam mais? Ou treinamento pode compensar experiência?
 
 - A produtividade de um bloco depende da complexidade da tarefa?
     - Talvez blocos que exigem mais precisão tenham produtividade naturalmente menor.
