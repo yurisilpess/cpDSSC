@@ -14,6 +14,12 @@ print("Colunas e tipos de dados:")
 print(df.dtypes)
 ```
 
+### `⁠nome_obra`: VARIÁVEL QUALITATIVA NOMINAL – representa o nome das obras e não tem ordem natural.
+
+### `descricao`: VARIÁVEL QUALITATIVA NOMINAL – indica a descrição dos blocos, sem uma sequência ordenada.
+
+### `produtividade`: VARIÁVEL QUANTITATIVA CONTÍNUA – mede a produtividade, podendo assumir qualquer valor dentro de um intervalo.
+
 ---
 
 <h2 align="center">Q2 - PERGUNTAS DE PRODUTIVIDADE</h2>
