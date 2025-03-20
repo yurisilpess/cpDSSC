@@ -1,7 +1,22 @@
-### Q1
+<h1 align="center">QUESTÕES</h1>
+
+<h2 align="center">Q1 - Importação dos dados e análise das colunas</h2>
+
+```py
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+df = pd.read_csv('dados_produtividade_construcao.csv')
+print(df.head())
+df.info()
+print("Colunas e tipos de dados:")
+print(df.dtypes)
+```
+
 ---
 
-### Q2 - Perguntas Sobre Produtividade
+<h2 align="center">Q2 - PERGUNTAS DE PRODUTIVIDADE</h2>
 
 - Quais são as obras mais e menos produtivas?
     - Isso ajuda a entender quais projetos estão performando bem e quais precisam de ajustes.
@@ -36,23 +51,110 @@ Equipes mais experientes realmente entregam mais? Ou treinamento pode compensar 
  
 ---
 
-### 3 - 
+<h2 align="center">Q3 - Diferença de produtividade entre obras</h2>
 
+```py
+print("Obras únicas:")
+print(df['nome_obra'].unique())
+print("Contagem de apropriações por obra:")
+print(df.groupby('nome_obra')['produtividade'].count())
+print("Estatísticas descritivas por obra:")
+print(df.groupby('nome_obra')['produtividade'].describe())
+
+plt.figure(figsize=(10,6))
+sns.boxplot(x='nome_obra', y='produtividade', data=df)
+plt.title("Boxplot da Produtividade por Obra")
+plt.xlabel("nome_obra")
+plt.ylabel("produtividade")
+plt.xticks(rotation=45)
+plt.show()
+```
 ---
 
-### 4 - 
+<h2 align="center">Q4 - Diferença de produtividade entre blocos (descrição)</h2>
 
+```py
+print("Blocos únicos:")
+print(df['descricao'].unique())
+print("Contagem de apropriações por bloco:")
+print(df.groupby('descricao')['produtividade'].count())
+print("Estatísticas descritivas por bloco:")
+print(df.groupby('descricao')['produtividade'].describe())
+
+plt.figure(figsize=(10,6))
+sns.boxplot(x='descricao', y='produtividade', data=df)
+plt.title("Boxplot da Produtividade por Bloco")
+plt.xlabel("descricao")
+plt.ylabel("produtividade")
+plt.xticks(rotation=45)
+plt.show()
+```
 ---
 
-### 5 - 
+<h2 align="center">Q5 - Relação entre média e mediana para detecção de outliers</h2>
 
+```py
+for categoria in ['nome_obra', 'descricao']:
+    print(f"\nMédia e Mediana por {categoria}:")
+    print(df.groupby(categoria)['produtividade'].agg(['mean', 'median']))
+```
 ---
 
-### 6 -
+<h2 align="center">Q6 - Bloco com produtividade mais e menos previsível (análise de variabilidade)</h2>
 
+```py
+variabilidade = df.groupby('descricao')['produtividade'].std()
+print("\nDesvio Padrão por Bloco:")
+print(variabilidade)
+```
 ---
 
-### 7 - O coeficiente (SIURB)
+<h3 align="center">Código completo</h3>
+
+```py
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+df = pd.read_csv('dados_produtividade_construcao.csv')
+
+print(df.head())
+df.info()
+print(df['nome_obra'].unique())
+print(df['descricao'].unique())
+print(df.groupby('nome_obra')['produtividade'].count())
+print(df.groupby('descricao')['produtividade'].count())
+print(df.groupby('nome_obra')['produtividade'].describe())
+print(df.groupby('descricao')['produtividade'].describe())
+
+plt.figure(figsize=(10,6))
+sns.boxplot(x='nome_obra', y='produtividade', data=df)
+plt.title("Boxplot da Produtividade por Obra")
+plt.xlabel("nome_obra")
+plt.ylabel("produtividade")
+plt.xticks(rotation=45)
+plt.show()
+
+plt.figure(figsize=(10,6))
+sns.boxplot(x='descricao', y='produtividade', data=df)
+plt.title("Boxplot da Produtividade por Bloco")
+plt.xlabel("descricao")
+plt.ylabel("produtividade")
+plt.xticks(rotation=45)
+plt.show()
+
+for categoria in ['nome_obra', 'descricao']:
+    print(f"\nMédia e Mediana por {categoria}:")
+    print(df.groupby(categoria)['produtividade'].agg(['mean', 'median']))
+
+variabilidade = df.groupby('descricao')['produtividade'].std()
+print("\nDesvio Padrão por Bloco:")
+print(variabilidade)
+
+```
+---
+
+<h2 align="center">Q7 - O coeficiente (SIURB)</h2>
 
 Pelo que entendi do vídeo, esse coeficiente é um jeito de ajustar os valores do orçamento com base em obras passadas. Ele compara o custo que foi planejado com o custo real, pra tentar deixar as previsões mais certeiras.
 
@@ -60,8 +162,9 @@ Ele ajuda a evitar que a gente subestime ou superestime os gastos. Isso é útil
 
 No fim, a ideia é que os orçamentos fiquem mais realistas e tenham menos erro quando forem usados pra planejar novas obras.
 
+---
 
-# <h1 align="center">Desenvolvedores</h1>
+<h1 align="center">Desenvolvedores</h1>
 
 -------
 
