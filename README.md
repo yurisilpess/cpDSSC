@@ -166,8 +166,6 @@ No fim, a ideia é que os orçamentos fiquem mais realistas e tenham menos erro 
 
 <h1 align="center">Desenvolvedores</h1>
 
--------
-
 | Dev | Avatar | RM |
 | ------------- | ------ | ----- |
 | ![](https://img.shields.io/badge/DEV-Yuri-70b2b4?style=for-the-badge&logo=github) | <a href="https://github.com/yurisilpess"><img src="https://avatars.githubusercontent.com/u/99032447?v=4" height="50" style="border-radius:30px;"></a> | RM557475 |
