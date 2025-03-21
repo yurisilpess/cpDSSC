@@ -69,11 +69,19 @@ plt.ylabel("produtividade")
 plt.xticks(rotation=57)
 plt.show()
 
-# 
-#
-# 
+# nome_obra: Variável qualitativa nominal – representa o nome da obra, sem ordem específica.
+# descricao: Variável qualitativa nominal – indica o bloco dentro da obra, sem hierarquia.
+# produtividade: Variável quantitativa contínua – representa a produtividade, podendo assumir valores fracionários em um cenário real.
 
 ```
+
+# CONCLUSÃO
+Ao analisar os dados, percebemos que a Obra B tem a maior produtividade média (36 e 20 nos blocos), enquanto Obra A e Obra C apresentam números menores e mais próximos entre si. Isso pode indicar que:
+
+Diferentes métodos ou recursos podem estar sendo usados em cada obra, afetando o desempenho.
+A complexidade da obra pode influenciar na produtividade – se Obra B for mais eficiente por conta de processos mais otimizados, isso explicaria os valores mais altos.
+Distribuição de mão de obra e materiais pode estar favorecendo a Obra B em relação às outras.
+
 ---
 
 <h2 align="center">Q4 - Diferença de produtividade entre blocos (descrição)</h2>
