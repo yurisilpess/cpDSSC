@@ -12,13 +12,14 @@ print(df.head())
 df.info()
 print("Colunas e tipos de dados:")
 print(df.dtypes)
+
+# nome_obra: VARIÁVEL QUALITATIVA NOMINAL – representa o nome das obras e não tem ordem natural.
+
+# descricao: VARIÁVEL QUALITATIVA NOMINAL – indica a descrição dos blocos, sem uma sequência ordenada.
+
+# produtividade: VARIÁVEL QUANTITATIVA CONTÍNUA – mede a produtividade, podendo assumir qualquer valor dentro de um intervalo.
+
 ```
-
-### `⁠nome_obra`: VARIÁVEL QUALITATIVA NOMINAL – representa o nome das obras e não tem ordem natural.
-
-### `descricao`: VARIÁVEL QUALITATIVA NOMINAL – indica a descrição dos blocos, sem uma sequência ordenada.
-
-### `produtividade`: VARIÁVEL QUANTITATIVA CONTÍNUA – mede a produtividade, podendo assumir qualquer valor dentro de um intervalo.
 
 ---
 
@@ -67,12 +68,12 @@ print(df.groupby('nome_obra')['produtividade'].count())
 print("Estatísticas descritivas por obra:")
 print(df.groupby('nome_obra')['produtividade'].describe())
 
-plt.figure(figsize=(10,6))
+plt.figure(figsize=(36,10))
 sns.boxplot(x='nome_obra', y='produtividade', data=df)
 plt.title("Boxplot da Produtividade por Obra")
 plt.xlabel("nome_obra")
 plt.ylabel("produtividade")
-plt.xticks(rotation=45)
+plt.xticks(rotation=57)
 plt.show()
 ```
 ---
@@ -87,12 +88,12 @@ print(df.groupby('descricao')['produtividade'].count())
 print("Estatísticas descritivas por bloco:")
 print(df.groupby('descricao')['produtividade'].describe())
 
-plt.figure(figsize=(10,6))
+plt.figure(figsize=(36,10))
 sns.boxplot(x='descricao', y='produtividade', data=df)
 plt.title("Boxplot da Produtividade por Bloco")
 plt.xlabel("descricao")
 plt.ylabel("produtividade")
-plt.xticks(rotation=45)
+plt.xticks(rotation=57)
 plt.show()
 ```
 ---
