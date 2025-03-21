@@ -123,6 +123,12 @@ import seaborn as sns
 
 df = pd.read_csv('dados_produtividade_construcao.csv')
 
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+df = pd.read_csv('dados_produtividade_construcao.csv')
+
 print(df.head())
 df.info()
 print(df['nome_obra'].unique())
@@ -132,20 +138,20 @@ print(df.groupby('descricao')['produtividade'].count())
 print(df.groupby('nome_obra')['produtividade'].describe())
 print(df.groupby('descricao')['produtividade'].describe())
 
-plt.figure(figsize=(10,6))
+plt.figure(figsize=(36,10))
 sns.boxplot(x='nome_obra', y='produtividade', data=df)
 plt.title("Boxplot da Produtividade por Obra")
 plt.xlabel("nome_obra")
 plt.ylabel("produtividade")
-plt.xticks(rotation=45)
+plt.xticks(rotation=57)
 plt.show()
 
-plt.figure(figsize=(10,6))
+plt.figure(figsize=(36,10))
 sns.boxplot(x='descricao', y='produtividade', data=df)
 plt.title("Boxplot da Produtividade por Bloco")
 plt.xlabel("descricao")
 plt.ylabel("produtividade")
-plt.xticks(rotation=45)
+plt.xticks(rotation=57)
 plt.show()
 
 for categoria in ['nome_obra', 'descricao']:
@@ -155,7 +161,6 @@ for categoria in ['nome_obra', 'descricao']:
 variabilidade = df.groupby('descricao')['produtividade'].std()
 print("\nDesvio Padrão por Bloco:")
 print(variabilidade)
-
 ```
 ---
 
