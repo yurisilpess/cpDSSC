@@ -12,13 +12,6 @@ print(df.head())
 df.info()
 print("Colunas e tipos de dados:")
 print(df.dtypes)
-
-# nome_obra: VARIÁVEL QUALITATIVA NOMINAL – representa o nome das obras e não tem ordem natural.
-
-# descricao: VARIÁVEL QUALITATIVA NOMINAL – indica a descrição dos blocos, sem uma sequência ordenada.
-
-# produtividade: VARIÁVEL QUANTITATIVA CONTÍNUA – mede a produtividade, podendo assumir qualquer valor dentro de um intervalo.
-
 ```
 
 ---
@@ -75,6 +68,11 @@ plt.xlabel("nome_obra")
 plt.ylabel("produtividade")
 plt.xticks(rotation=57)
 plt.show()
+
+# 
+#
+# 
+
 ```
 ---
 
@@ -163,11 +161,13 @@ print(variabilidade)
 
 <h2 align="center">Q7 - O coeficiente (SIURB)</h2>
 
-Pelo que entendemos do vídeo, esse coeficiente é um jeito de ajustar os valores do orçamento com base em obras passadas. Ele compara o custo que foi planejado com o custo real, pra tentar deixar as previsões mais certeiras.
+Pelo que entendemos do vídeo, esse coeficiente serve para ajustar os valores do orçamento comparando o custo planejado com o custo real. Parece que, se o custo real for maior que o previsto, o coeficiente diminui, e se for menor, ele aumenta – como um mecanismo para “corrigir” o orçamento. Talvez ele seja calculado dividindo o custo real pelo planejado. A ideia é que, ao aplicar esse coeficiente, o orçamento final se torne mais realista, evitando tanto a subestimação quanto a superestimação dos custos.
 
-Ele ajuda a evitar que a gente subestime ou superestime os gastos. Isso é útil porque, na prática, os custos podem mudar bastante por vários motivos, e esse coeficiente serve como um ajuste baseado no que já aconteceu antes.
+---
 
-No fim, a ideia é que os orçamentos fiquem mais realistas e tenham menos erro quando forem usados pra planejar novas obras.
+<h2 align="center">Q8 - DÚVIDAS (SIURB)</h2>
+
+Confesso que o vídeo ficou bem técnico e, pra mim, meio confuso. Fiquei com dúvidas se esse coeficiente leva em conta só os custos dos materiais ou se também considera os custos da mão de obra. Além disso, não ficou claro se ele deve ser calculado para cada obra separadamente ou se é uma média geral para todas as obras. Acho que preciso ver mais exemplos práticos para entender melhor essa parte, porque a explicação misturou vários conceitos de uma forma que me deixou um pouco perdido.
 
 ---
 
